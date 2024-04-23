@@ -1,0 +1,109 @@
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: $primary-color;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: $primary-color;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-select option {
+  width: 50%;
+}
+
+.pagination .page-link {
+  color: $primary-color;
+
+  &:focus {
+    box-shadow: none;
+    border: 1px solid $primary-color;
+  }
+}
+
+.member-page {
+  // min-height: 100vh;
+  // place-items: center;
+
+  .form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .form-group {
+    position: relative;
+  }
+
+  input,
+  button[type="submit"] {
+    border-radius: 3px;
+    padding-block: 16px;
+    padding-inline: 16px;
+    font: inherit;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border: 1px solid #c2c8d0;
+    transition: 0.2s ease;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+
+  label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease;
+  }
+
+  input:focus ~ label,
+  input:valid ~ label {
+    top: calc(16px * -0.7);
+    left: calc(16px * 0.5);
+    font-size: 15px;
+    background-color: #fff;
+    color: $primary-color;
+    padding-inline: 4px;
+  }
+
+  button[type="submit"] {
+    display: inline-block;
+    background-color: $primary-color;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .link {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+// .form-check-input:checked {
+//   background-color: $primary-color;
+//   border-color: $primary-color;
+// }
+
+// .form-check-input:focus {
+//   border-color: #678b41;
+//   outline: 0;
+//   box-shadow: 0 0 0 0.25rem rgba(154, 190, 116, 0.692);
+// }
+
+
+

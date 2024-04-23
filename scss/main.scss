@@ -1,0 +1,306 @@
+@import "veriable";
+@import "button";
+@import "input";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.header-top {
+  .dropdown {
+    list-style: none;
+    padding: 0px 15px;
+  }
+}
+
+// navbar
+
+header {
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .nav-link {
+    color: $primary-color;
+  }
+
+  .nav-item {
+    padding: 0px 5px;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .dropdown {
+    padding: 0px 4px;
+  }
+
+  .fa-user {
+    font-size: 20px;
+    padding-left: 10px;
+    color: $primary-color;
+  }
+
+  // cart
+  .fa-cart-shopping {
+    text-align: center;
+    position: relative;
+    color: $primary-color;
+    font-size: 20px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+
+  .dropdown-toggle {
+    color: $primary-color;
+  }
+
+  .input-group {
+    border: 0px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+
+    .form-control {
+      border: 0px;
+      border-radius: 0px;
+      background-color: transparent;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .input-group-text {
+      border: 0px;
+      border-radius: 0px;
+      background-color: transparent;
+    }
+  }
+
+  .rating {
+    .fa-star {
+      font-size: 12px;
+      color: $primary-color;
+    }
+
+    p {
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  // Assigning the above animation to all dropdown menus
+  .dropdown-menu {
+    &.show {
+      -webkit-animation: fadeIn 0.3s alternate;
+      animation: fadeIn 0.3s alternate;
+    }
+  }
+
+  // Mega Menu adjustments
+  .nav-item.dropdown.dropdown-mega {
+    position: static;
+
+    .dropdown-menu {
+      width: 90%;
+      top: auto;
+      left: 5%;
+    }
+  }
+
+  // Complete styles for main navbar toggler and hamburger menu
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    outline: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .hamburger-toggle {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      z-index: 11;
+      // float: right;
+
+      .hamburger {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 50%;
+        top: 50%;
+        width: 50%;
+        height: 50%;
+        pointer-events: none;
+
+        span {
+          width: 100%;
+          height: 4px;
+          position: absolute;
+          background: #333;
+          border-radius: 2px;
+          z-index: 1;
+          transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+            background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+            all 0.2s ease-in-out;
+          left: 0px;
+
+          &:first-child {
+            top: 10%;
+            transform-origin: 50% 50%;
+            transform: translate(0% -50%) !important;
+          }
+
+          &:nth-child(2) {
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+
+          &:last-child {
+            left: 0px;
+            top: auto;
+            bottom: 10%;
+            transform-origin: 50% 50%;
+          }
+        }
+
+        &.active {
+          span {
+            position: absolute;
+            margin: 0;
+
+            &:first-child {
+              top: 45%;
+              transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+              left: 50%;
+              width: 0px;
+            }
+
+            &:last-child {
+              top: 45%;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h5 {
+    color: $primary-color;
+  }
+
+  // drawer
+  .menu {
+    h5 {
+      color: #fff;
+    }
+
+    .btn {
+      color: white;
+
+      .fa {
+        margin-left: 8px;
+      }
+    }
+
+    background-color: $primary-color;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    transition: all 0.2s ease-out;
+    z-index: 9999;
+  }
+}
+// footer
+footer {
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 13px;
+    opacity: 0.9;
+    margin: 0;
+    padding-bottom: 5px;
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    font-weight: 500;
+    opacity: 0.9;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      display: inline;
+      text-align: left;
+      padding-right: 5px;
+      color: $secondary-color;
+
+      transition: 0.7s;
+
+      &:hover {
+        color: $primary-color;
+        transition: 0.7s;
+      }
+    }
+  }
+
+  .copyright {
+    color: gray;
+    text-align: center;
+  }
+}
+
+
+// meadia query
+
+
+/* mobile  */
+@media (max-width: 768px) {
+
+}
+
+// tab only
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+
+// desktop only
+@media (min-width: 992px) {}
+
+// xtra large
+@media (min-width: 1600px) {
+
+}

@@ -1,0 +1,50 @@
+.btn-primary {
+  color: $white;
+  border-color: $primary-color;
+  background-color: $primary-color !important;
+  transition: 0.3s;
+  &:hover {
+    background-color: $white !important;
+    color: $primary-color;
+    border-color: $primary-color;
+    transition: 0.3s;
+  }
+  &:focus {
+    background-color: $white !important;
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: $white !important;
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn:focus-visible {
+  box-shadow: none;
+  border-color: $primary-color;
+}
+
+.btn-outline-primary {
+  background-color: #fff;
+  color: $primary-color !important;
+  border: 0px;
+  &:hover {
+    background-color: #fff;
+    color: $primary-color !important;
+    border: 0px;
+  }
+}
+
+.menu{
+  .btn-outline-warning{
+     background-color: #ffc107;
+  border: 0px;
+  }
+}
