@@ -19,3 +19,4 @@ $("#textslider").owlCarousel({
     },
   },
 });
+
