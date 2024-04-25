@@ -6,11 +6,7 @@
 
 
 body {
-  font-family: "inter",
-    sans-serif;
-  // font-family: 'Zodiak',
-  // sans-serif;
-
+  font-family: $inter
 }
 
 p,
@@ -155,8 +151,7 @@ h6 {
   }
 
   .left-card {
-    font-family: 'Zodiak',
-      sans-serif;
+    font-family: $zodiak;
 
     h6 {
       font-weight: 600;
@@ -227,10 +222,12 @@ h6 {
 
   .star-card {
     background-color: #f7f8f8;
-    h6{
+
+    h6 {
       color: #1A2626;
     }
-    p{
+
+    p {
       color: #676E6E;
       font-size: 14px;
     }
@@ -238,29 +235,115 @@ h6 {
 }
 
 // shop-department 
-.shop-department{
-  h6{
-    font-family: 'Zodiak',
-    sans-serif;
+.shop-department {
+  h6 {
+    font-family: $zodiak;
     font-weight: 600;
   }
+
   background-color: $bg-color;
-  p{
+
+  p {
     color: #050F1A;
     font-size: 14px;
   }
 }
 
 // deal-of-the-day
-.deal-of-the-day{
+.deal-of-the-day {
   background-color: $bg-color;
+
+  .card-img {
+    width: 290px;
+    border-radius: 0;
+  }
+
+  .d-flex {
+    gap: 8px;
+  }
+
+  .rating {
+    .fa-star {
+      color: #FFD800;
+      font-size: 14px;
+
+
+    }
+
+    .gray {
+      color: #D4D6D6 !important;
+    }
+
+  }
+
+  .item-discount {
+
+    span {
+      font-size: 20px;
+    }
+
+    .fw-bold {
+      font-size: 34px;
+      margin-left: 3px;
+    }
+
+    .discount {
+      margin-left: 10px;
+      color: #676E6E;
+    }
+  }
+
+  .text-gray {
+    color: #676E6E;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .justify-content-around {
+    p {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      img {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+
+  button {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+    gap: 5px;
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
 
 
 // footer
 footer {
+  background-color: $bg-color;
+
+  h6 {
+    font-family: $zodiak;
+    font-weight: 500;
+  }
+
   a {
     text-decoration: none;
+  }
+
+  .d-lg-flex {
+    gap: 5px;
   }
 
   p {
@@ -287,8 +370,11 @@ footer {
     li {
       display: inline;
       text-align: left;
-      padding-right: 5px;
+      padding: 12px 14px;
+
       color: $secondary-color;
+      background-color: #F7F8F8;
+
 
       transition: 0.7s;
 
@@ -303,8 +389,32 @@ footer {
     color: gray;
     text-align: center;
   }
+
+  select {
+    background-color: #F7F8F8 !important;
+    border: 0 !important;
+    border-radius: 0px !important;
+  }
 }
 
+// footer bottom
+.footer-bottom {
+  background-color: #DDDFDF;
+
+  p,
+  span {
+    font-size: 14px;
+  }
+
+  ul {
+    display: inline;
+    list-style: none;
+
+    li {
+      display: inline;
+    }
+  }
+}
 
 // meadia query
 
@@ -315,6 +425,21 @@ footer {
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
+  }
+
+  .deal-of-the-day .card-img {
+    width: 150px;
+  }
+
+  .deal-of-the-day .d-flex {
+    align-items: center;
+  }
+  .footer-bottom{
+    text-align: center;
+    ul{
+      display: block;
+      margin-top: 10px;
+    }
   }
 }
 
