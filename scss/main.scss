@@ -115,6 +115,15 @@ h6 {
   background-color: $bg-color;
 
   main {
+    .carousel {
+      margin-bottom: 4rem;
+    }
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+      bottom: 4rem;
+      z-index: 10;
+    }
 
     .carousel-control-prev,
     .carousel-control-next {
@@ -125,7 +134,8 @@ h6 {
       color: $primary-color;
       font-family: $zodiak;
     }
-    .btn-primary{
+
+    .btn-primary {
       font-size: 14px;
     }
   }
@@ -797,7 +807,27 @@ footer {
   .top-vendors .vendor-products img {
     width: 157px;
   }
+
+  .banner {
+    .carousel-caption {
+      bottom: 1rem !important;
+
+      .display-3 {
+        font-size: 2rem;
+      }
+
+      .btn-primary {
+        font-size: 12px;
+      }
+    }
+
+    .carousel-indicators {
+      bottom: -1rem;
+    }
+  }
+
 }
+
 
 // tab only
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -811,6 +841,28 @@ footer {
 
   .top-vendors .vendor-products img {
     width: 157px;
+  }
+
+  .banner ul li {
+    padding: 6px 16px;
+  }
+
+  .banner {
+    .carousel-caption {
+      bottom: 1rem !important;
+
+      .display-3 {
+        font-size: 2rem;
+      }
+
+      .btn-primary {
+        font-size: 12px;
+      }
+    }
+
+    .carousel-indicators {
+      bottom: -1rem;
+    }
   }
 }
 
