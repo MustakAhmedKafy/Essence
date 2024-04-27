@@ -114,6 +114,22 @@ h6 {
 .banner {
   background-color: $bg-color;
 
+  main {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+
+    h1 {
+      color: $primary-color;
+      font-family: $zodiak;
+    }
+    .btn-primary{
+      font-size: 14px;
+    }
+  }
+
   .carousel-indicators {
     align-items: center;
 
