@@ -19,6 +19,19 @@ h6 {
   margin: 0;
 }
 
+
+.background-gray {
+  background-color: $bg-color;
+  padding-top: 3rem !important;
+}
+
+.product-title {
+  font-family: $zodiak;
+  font-weight: 600;
+}
+
+// typhography end
+
 .header-top {
   color: $primary-color;
   font-weight: 600;
@@ -262,13 +275,6 @@ h6 {
 
 // shop-department 
 .shop-department {
-  h6 {
-    font-family: $zodiak;
-    font-weight: 600;
-  }
-
-  background-color: $bg-color;
-
   p {
     color: #050F1A;
     font-size: 14px;
@@ -277,12 +283,6 @@ h6 {
 
 // deal-of-the-day
 .deal-of-the-day {
-  background-color: $bg-color;
-
-  h6 {
-    font-family: $zodiak;
-    font-weight: 600;
-  }
 
   .card-img {
     width: 290px;
@@ -365,12 +365,7 @@ h6 {
 // selling-products
 
 .selling-products {
-  background-color: $bg-color;
 
-  h6 {
-    font-family: $zodiak;
-    font-weight: 600;
-  }
 
   img {
     width: 140px;
@@ -401,22 +396,12 @@ h6 {
   }
 }
 
-.on-selling-products {
-  background-color: $bg-color;
 
-  h6 {
-    font-weight: 600;
-  }
-}
 
 // apple
 .apple {
-  background-color: $bg-color;
 
   h6 {
-    font-family: $zodiak;
-    font-weight: 600;
-
     img {
       width: 30px;
     }
@@ -436,12 +421,7 @@ h6 {
 
 // shop-categories
 .shop-categories {
-  background-color: $bg-color;
 
-  h6 {
-    font-family: $zodiak;
-    font-weight: 600;
-  }
 
   .d-flex {
     gap: 8px;
@@ -464,13 +444,7 @@ h6 {
 // daily-discover
 
 .daily-discover {
-  background-color: $bg-color;
-
   .d-flex {
-    h6 {
-      font-family: $zodiak;
-      font-weight: 600;
-    }
 
     p {
       font-weight: 600;
@@ -548,12 +522,6 @@ h6 {
 }
 
 .top-brands {
-  background-color: $bg-color;
-
-  h6 {
-    font-family: $zodiak;
-    font-weight: 600;
-  }
 
   .owl-theme .owl-nav {
     margin-top: 0px !important;
@@ -604,18 +572,9 @@ h6 {
   }
 }
 
-.hot-producs {
-  background-color: $bg-color;
-}
 
 // top-vendors
 .top-vendors {
-  background-color: $bg-color;
-
-  h6 {
-    font-family: $zodiak;
-    font-weight: 600;
-  }
 
   .vendor-img {
     width: 60px;
@@ -661,7 +620,6 @@ h6 {
 
 // footer
 footer {
-  background-color: $bg-color;
 
   h6 {
     font-family: $zodiak;
